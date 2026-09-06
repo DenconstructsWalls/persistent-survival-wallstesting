@@ -1,7 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.DoAfter;
+using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
+using Content.Shared.Inventory;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
@@ -25,6 +27,7 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly IDynamicTypeFactory _typeFactory = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!;
 
     public override void Initialize()
     {
@@ -59,11 +62,12 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
             var targetCoordinates = Transform(target).Coordinates;
             if (component.MaxScanRange is { } maxScanRange && !_transformSystem.InRange(targetCoordinates, transform.Coordinates, maxScanRange))
             {
-                //Range too far, disable updates
-                StopAnalyzingEntity((uid, component), target);
+                //Range too far, disable updates until it is back in range
+                PauseAnalyzingEntity((uid, component), target);
                 continue;
             }
 
+            component.IsAnalyzerActive = true;
             UpdateScannedUser(uid, target, true);
         }
     }
@@ -110,6 +114,12 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
     /// </summary>
     private void OnInsertedIntoContainer(Entity<TAnalyzerComponent> uid, ref EntGotInsertedIntoContainerMessage args)
     {
+        if (_inventory.InSlotWithAnyFlags(uid.Owner, uid.Comp.StableFlags))
+            return;
+
+        if (HasComp<HandsComponent>(args.Container.Owner))
+            return;
+
         if (uid.Comp.ScannedEntity is { })
             _toggle.TryDeactivate(uid.Owner);
     }
@@ -168,6 +178,21 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
         _toggle.TryDeactivate(analyzer.Owner);
 
         UpdateScannedUser(analyzer, target, false);
+    }
+
+
+    /// <summary>
+    /// If the scanner is active, sends one last update and sets it to inactive.
+    /// </summary>
+    /// <param name="healthAnalyzer">The plant analyzer that's receiving the updates</param>
+    /// <param name="target">The entity to analyze</param>
+    private void PauseAnalyzingEntity(Entity<TAnalyzerComponent> healthAnalyzer, EntityUid target)
+    {
+        if (!healthAnalyzer.Comp.IsAnalyzerActive)
+            return;
+
+        UpdateScannedUser(healthAnalyzer, target, false);
+        healthAnalyzer.Comp.IsAnalyzerActive = false;
     }
 
     /// <summary>
