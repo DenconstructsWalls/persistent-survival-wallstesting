@@ -3,7 +3,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitBattleDressUniformWoodland
   name: woodland battle dress uniform
-  description: A woodland patterncamoflauge military uniform.
+  description: A woodland pattern camoflauge military uniform.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Camoflauge/Woodland/bdu.rsi
