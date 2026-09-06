@@ -24,7 +24,8 @@
   - type: ItemToggle
     onUse: false
   - type: PlantAnalyzer
-    scanDelay: 5
+    scanDelay: 0.3          # PERSISTENT SURVIVAL CHANGED FROM 5 TO 0.3 FOR QOL
+    maxScanRange: 4         # PERSISTENT SURVIVAL ADDED MAX SCAN RANGE 4 FOR QOL
   - type: GuideHelp
     guides:
     - Botany
