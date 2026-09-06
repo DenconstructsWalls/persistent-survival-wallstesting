@@ -21,8 +21,8 @@
       visible: false
   - type: Physics
     bodyType: KinematicController
-  - type: CollisionWake
-    enabled: false
+  ## - type: CollisionWake          DISABLED FOR PERSISTENT SURVIVAL
+  ##   enabled: false               DISABLED FOR PERSISTENT SURVIVAL
   - type: InteractionOutline
   - type: Fixtures
     fixtures:
