@@ -23,5 +23,5 @@ public sealed partial class CCVars
     ///     How much round time in seconds must pass before a chunk is unloaded
     /// </summary>
     public static readonly CVarDef<int> WorldChunkUnloadDelay =
-        CVarDef.Create("worldgen.chunk_unload_delay", 1 * 2.5 * 60 * 60, CVar.SERVERONLY); // 2.5 hours (On seconds)
+        CVarDef.Create("worldgen.chunk_unload_delay", 1 * 5 * 60 * 60, CVar.SERVERONLY); // 3 Days default of total Round Time
 }
