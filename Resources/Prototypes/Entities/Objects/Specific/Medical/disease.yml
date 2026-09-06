@@ -24,7 +24,7 @@
   parent: BaseAmmoProvider # this is for cycling swabs out and not spawning 30 entities, trust
   id: BoxMouthSwab
   name: sterile swab dispenser
-  description: Dispenses 30 sterile swabs, extremely useful for botany.
+  description: Dispenses 50 sterile swabs, extremely useful for botany.
   components:
   - type: Sprite
     layers:
@@ -35,7 +35,7 @@
       components:
       - BotanySwab
     proto: DiseaseSwab
-    capacity: 30
+    capacity: 50 # 50 from 30
   - type: GuideHelp
     guides:
   # - Virology (when it's back)
