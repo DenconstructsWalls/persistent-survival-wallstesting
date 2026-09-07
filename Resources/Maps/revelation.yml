@@ -1048,7 +1048,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: NT Genesis Station
+      id: Revelation
     - type: ExplosionAirtightGrid
 - proto: Grille
   entities:
