@@ -1,9 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.DoAfter;
-using Content.Shared.Hands.Components;
+using Content.Shared.Hands.Components; // Survival made it work while pocketed
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
-using Content.Shared.Inventory;
+using Content.Shared.Inventory; // Survival made it work while pocketed
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
@@ -27,7 +27,7 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly IDynamicTypeFactory _typeFactory = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!; // Survival made it work while pocketed
 
     public override void Initialize()
     {
@@ -62,7 +62,7 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
             var targetCoordinates = Transform(target).Coordinates;
             if (component.MaxScanRange is { } maxScanRange && !_transformSystem.InRange(targetCoordinates, transform.Coordinates, maxScanRange))
             {
-                //Range too far, disable updates until it is back in range
+                //Range too far, disable updates until it is back in range // Survival made it reactivate when back in range
                 PauseAnalyzingEntity((uid, component), target);
                 continue;
             }
@@ -114,7 +114,7 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
     /// </summary>
     private void OnInsertedIntoContainer(Entity<TAnalyzerComponent> uid, ref EntGotInsertedIntoContainerMessage args)
     {
-        if (_inventory.InSlotWithAnyFlags(uid.Owner, uid.Comp.StableFlags))
+        if (_inventory.InSlotWithAnyFlags(uid.Owner, uid.Comp.StableFlags)) // Survival made it work while pocketed
             return;
 
         if (HasComp<HandsComponent>(args.Container.Owner))
@@ -182,7 +182,7 @@ public abstract class AbstractAnalyzerSystem<TAnalyzerComponent, TAnalyzerDoAfte
 
 
     /// <summary>
-    /// If the scanner is active, sends one last update and sets it to inactive.
+    /// If the scanner is active, sends one last update and sets it to inactive. // Survival made it reactivate when back in range
     /// </summary>
     /// <param name="healthAnalyzer">The plant analyzer that's receiving the updates</param>
     /// <param name="target">The entity to analyze</param>

@@ -35,7 +35,7 @@
       components:
       - BotanySwab
     proto: DiseaseSwab
-    capacity: 50 # 50 from 30
+    capacity: 50 # Survival 50 from 30
   - type: GuideHelp
     guides:
   # - Virology (when it's back)
