@@ -1,7 +1,7 @@
 - type: gameMap
   id: Revelation
   mapName: 'Revelation'
-  mapPath: /Maps/revelation.yml
+  mapPath: /Maps/revelation-survival.yml
   minPlayers: 0
   maxPlayers: 7
   stations:
