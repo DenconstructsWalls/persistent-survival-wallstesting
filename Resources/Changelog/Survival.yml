@@ -13,3 +13,11 @@
   id: 2
   time: '2026-09-07T04:45:24.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/31
+- author: Kurycovwolf2
+  changes:
+  - message: Faster plant analyser, analyser has a bit more range to stay updated
+      for QOL
+    type: Tweak
+  id: 3
+  time: '2026-09-07T04:45:24.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/31
