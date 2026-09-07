@@ -12,11 +12,12 @@
   - type: Transform
     anchored: true
   - type: Anchorable
+    flags: none
   - type: Pullable
   - type: Physics
     bodyType: Static
   - type: ApcPowerReceiver
-    powerLoad: 500
+    powerLoad: 6000
   # Persistence: make atmos fans into machines
   #- type: ExtensionCableReceiver
   #- type: LightningTarget
@@ -72,7 +73,7 @@
   - type: Physics
     bodyType: Static
   - type: ApcPowerReceiver
-    powerLoad: 500
+    powerLoad: 6000
   # Persistence: make atmos fans into machines
   #- type: ExtensionCableReceiver
   #- type: LightningTarget
