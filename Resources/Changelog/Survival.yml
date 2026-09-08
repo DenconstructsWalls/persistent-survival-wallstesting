@@ -21,3 +21,25 @@
   id: 3
   time: '2026-09-07T04:45:24.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/31
+- author: DenconstructsWalls
+  changes:
+  - message: Plant analyzers now work while in your pockets.
+    type: Tweak
+  - message: Plant analyzers reactivate when back in range.
+    type: Tweak
+  - message: Swab boxes fit more swabs!
+    type: Tweak
+  - message: Industrial reagent grinders storage is bigger!
+    type: Tweak
+  - message: Moths don't have lungs!
+    type: Fix
+  id: 4
+  time: '2026-09-08T04:08:27.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/34
+- author: Kurycovwolf2
+  changes:
+  - message: Asteroids despawn after not being visited for 2.5h now instead of 5h
+    type: Tweak
+  id: 5
+  time: '2026-09-08T04:07:56.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/33
