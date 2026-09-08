@@ -17,7 +17,7 @@
   - type: Physics
     bodyType: Static
   - type: ApcPowerReceiver
-    powerLoad: 6000
+    powerLoad: 500 # This will be changed if we add tiny fans PSurvival
   # Persistence: make atmos fans into machines
   #- type: ExtensionCableReceiver
   #- type: LightningTarget
@@ -73,7 +73,7 @@
   - type: Physics
     bodyType: Static
   - type: ApcPowerReceiver
-    powerLoad: 6000
+    powerLoad: 500 # This will be changed if we add tiny fans PSurvival
   # Persistence: make atmos fans into machines
   #- type: ExtensionCableReceiver
   #- type: LightningTarget
