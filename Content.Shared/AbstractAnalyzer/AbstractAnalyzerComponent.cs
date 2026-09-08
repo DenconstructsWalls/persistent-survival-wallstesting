@@ -1,3 +1,4 @@
+using Content.Shared.Inventory; // Survival made it work while pocketed
 using Robust.Shared.Audio;
 
 namespace Content.Shared.AbstractAnalyzer;
@@ -31,10 +32,16 @@ public abstract partial class AbstractAnalyzerComponent : Component
     public TimeSpan UpdateInterval = TimeSpan.FromSeconds(1);
 
     /// <summary>
+    /// If the last state of the plant analyzer was active (e.g. they are in range of the plant).
+    /// </summary>
+    [DataField]
+    public bool IsAnalyzerActive = false;
+
+    /// <summary>
     /// How long it takes to scan someone.
     /// </summary>
     [DataField]
-    public TimeSpan ScanDelay = TimeSpan.FromSeconds(0.8);
+    public TimeSpan ScanDelay = TimeSpan.FromSeconds(0.8); // This doesn't work
 
     /// <summary>
     /// Which entity has been scanned, for continuous updates
@@ -46,7 +53,7 @@ public abstract partial class AbstractAnalyzerComponent : Component
     /// The maximum range in tiles at which the analyzer can receive continuous updates, a value of null will be infinite range
     /// </summary>
     [DataField]
-    public float? MaxScanRange = 2.5f;
+    public float? MaxScanRange = 2.5f; // This doesn't work
 
     /// <summary>
     /// Sound played on scanning begin
@@ -65,4 +72,10 @@ public abstract partial class AbstractAnalyzerComponent : Component
     /// </summary>
     [DataField]
     public bool Silent;
+
+    /// <summary>
+    /// Survival made it work while pocketed
+    /// </summary>
+    [DataField]
+    public SlotFlags StableFlags = SlotFlags.POCKET;
 }
