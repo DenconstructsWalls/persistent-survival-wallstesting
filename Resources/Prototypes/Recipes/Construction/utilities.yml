@@ -1093,6 +1093,16 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
 
+# Survival: airlock controller compatible dual-port
+- type: construction
+  id: GasDualPortVentPumpAuto
+  graph: GasBinary
+  startNode: start
+  targetNode: dualportventpumpauto
+  category: construction-category-utilities
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
 - type: construction
   id: HeatExchanger
   graph: GasBinary
