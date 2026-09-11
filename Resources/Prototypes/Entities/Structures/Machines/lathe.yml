@@ -56,6 +56,7 @@
     idlePowerDraw: 150
     workingPowerDraw: 1000
   - type: AccessReader
+  - type: Lock
 
 # a lathe that can be sped up with space lube / slowed down with glue
 - type: entity
