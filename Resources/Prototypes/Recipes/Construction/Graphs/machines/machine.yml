@@ -99,6 +99,8 @@
               event: !type:MachineDeconstructedEvent
               broadcast: false
           conditions:
+            - !type:Locked
+              locked: false
             - !type:EntityAnchored
             - !type:WirePanel
           steps:
