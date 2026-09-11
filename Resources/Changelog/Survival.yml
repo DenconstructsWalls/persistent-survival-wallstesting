@@ -50,3 +50,10 @@
   id: 6
   time: '2026-09-09T15:35:11.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/36
+- author: Summerly56
+  changes:
+  - message: You can lock lathes to prevent theft of materials by deconstruction.
+    type: Tweak
+  id: 7
+  time: '2026-09-11T02:29:33.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/37
