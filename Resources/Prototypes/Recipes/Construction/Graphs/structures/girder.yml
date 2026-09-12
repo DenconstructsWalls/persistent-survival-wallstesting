@@ -232,7 +232,7 @@
         - to: miningWall
           steps:
           - material: Steel
-            amount: 4
+            amount: 2
             doAfter: 1
           - material: Plastic
             amount: 2
@@ -247,7 +247,7 @@
           completed:
             - !type:GivePrototype
               prototype: SheetSteel1
-              amount: 4
+              amount: 2
             - !type:GivePrototype
               prototype: SheetPlastic1
               amount: 2
