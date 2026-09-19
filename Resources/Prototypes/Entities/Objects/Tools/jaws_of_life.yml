@@ -74,6 +74,7 @@
   - type: Prying
     force: true
     speedModifier: 3.0
+    pryPowered: true
   - type: MultipleTool
     entries:
       - behavior: Prying
