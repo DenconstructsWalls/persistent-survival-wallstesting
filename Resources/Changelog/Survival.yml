@@ -57,3 +57,10 @@
   id: 7
   time: '2026-09-11T02:29:33.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/37
+- author: slingbow
+  changes:
+  - message: Added the ability for Syndicate Jaws of Life to pry open powered doors.
+    type: Add
+  id: 8
+  time: '2026-09-19T00:35:16.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/38
