@@ -235,6 +235,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.4
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
@@ -268,6 +270,8 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients: # Buffed for Persistence 14
@@ -301,6 +305,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.4
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
@@ -331,6 +337,8 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
     damageCoefficient: 0.5
   - type: Armor
     modifiers:
@@ -482,6 +490,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
@@ -550,8 +560,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.75
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.25
   - type: Armor
     modifiers:
       coefficients:
@@ -615,8 +625,8 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient:  0.1
   - type: Armor
     modifiers:
       coefficients:
@@ -655,8 +665,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:

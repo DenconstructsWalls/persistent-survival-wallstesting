@@ -14,6 +14,8 @@
     sprite: Clothing/OuterClothing/Armor/security.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
     modifiers:
       coefficients:
@@ -64,6 +66,8 @@
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -84,6 +88,8 @@
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -114,6 +120,8 @@
   id: ClothingOuterArmorBaseCarapace
   abstract: true
   components:
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -162,6 +170,8 @@
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.7
   - type: Armor
     modifiers:
       coefficients:
@@ -186,6 +196,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.7
   - type: Armor
     modifiers:
       coefficients:
@@ -213,6 +225,8 @@
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -248,8 +262,8 @@
         Caustic: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.35
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.45
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -312,6 +326,8 @@
     sprite: Clothing/OuterClothing/Armor/riot.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/riot.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:
@@ -334,6 +350,8 @@
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -353,6 +371,8 @@
     sprite: Clothing/OuterClothing/Armor/heavy.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/heavy.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.7
   - type: Armor
     modifiers:
       coefficients:
@@ -498,6 +518,8 @@
     sprite: Clothing/OuterClothing/Armor/card_armour.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/card_armour.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.9
   - type: Armor
     modifiers:
       coefficients:
