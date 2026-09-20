@@ -1223,16 +1223,6 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: ClothingUniformRandomStandard
-  result: ClothingUniformRandomStandard
-  
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformRandomBra
-  result: ClothingUniformRandomBra
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
   id: ClothingUniformGenericBusinessCasual
   result: ClothingUniformGenericBusinessCasual
 
