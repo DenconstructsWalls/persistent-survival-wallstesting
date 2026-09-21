@@ -73,3 +73,10 @@
   id: 9
   time: '2026-09-21T01:45:10.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/39
+- author: Meowy15
+  changes:
+  - message: Made interdyne defibs take a third of the time to use!
+    type: Tweak
+  id: 10
+  time: '2026-09-21T20:50:44.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/41
