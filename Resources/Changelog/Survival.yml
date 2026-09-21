@@ -64,3 +64,12 @@
   id: 8
   time: '2026-09-19T00:35:16.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/38
+- author: Jasos123
+  changes:
+  - message: All combat related armors, coats and hardsuits have stun resistance now,
+      most armors and coats have 20% stun resistance and most hardsuits have 50% stun
+      resistance. Syndicate related armors and hardsuits have higher stun resistance.
+    type: Add
+  id: 9
+  time: '2026-09-21T01:45:10.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/39
