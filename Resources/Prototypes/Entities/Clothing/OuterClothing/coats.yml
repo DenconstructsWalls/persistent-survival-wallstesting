@@ -65,6 +65,8 @@
   parent: [ ClothingOuterArmorBase, ClothingOuterStorageBase ]
   id: ClothingOuterArmorHoS
   components:
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8  
   - type: Armor
     modifiers:
       coefficients:
@@ -79,6 +81,8 @@
   parent: [ ClothingOuterArmorBase, ClothingOuterStorageBase ]
   id: ClothingOuterArmorWarden
   components:
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
@@ -416,6 +420,8 @@
     sprite: Clothing/OuterClothing/Coats/brigmedic.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/brigmedic.rsi
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere - nuh uh hate stun meta, modified for PersistentSurvival14
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
