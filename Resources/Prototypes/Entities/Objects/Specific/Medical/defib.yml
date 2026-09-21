@@ -91,7 +91,7 @@
     zapHeal:
       types:
         Asphyxiation: -40
-    doAfterDuration: 2
+    doAfterDuration: 6
   - type: DoAfter
   - type: UseDelay
 
@@ -130,3 +130,15 @@
       types:
         Blunt: 8
         Shock: 16
+  - type: Item
+    size: Normal
+  - type: ToggleCellDraw
+  - type: PowerCellDraw
+    useCharge: 100
+  - type: Defibrillator
+    zapHeal:
+      types:
+        Asphyxiation: -40
+    doAfterDuration: 2
+  - type: DoAfter
+  - type: UseDelay
