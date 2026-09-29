@@ -32,6 +32,7 @@
       damage:
         types:
           Heat: 40
+          Structural: 20
     - type: InteractionOutline
     - type: Sprite
     - type: Appearance
