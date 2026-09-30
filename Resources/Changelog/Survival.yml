@@ -87,3 +87,17 @@
   id: 11
   time: '2026-09-29T13:37:51.0000000+00:00'
   url: https://github.com/Summerly56/persistent-survival/pull/43
+- author: slingbow
+  changes:
+  - message: Adjusted Gibtonite count and commented out MobsDunGen for VGRoids
+    type: Tweak
+  id: 12
+  time: '2026-09-30T19:11:36.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/48
+- author: slingbow
+  changes:
+  - message: Added magnet to plant bag and increased general range of bag magnets
+    type: Tweak
+  id: 13
+  time: '2026-09-30T19:11:50.0000000+00:00'
+  url: https://github.com/Summerly56/persistent-survival/pull/45
