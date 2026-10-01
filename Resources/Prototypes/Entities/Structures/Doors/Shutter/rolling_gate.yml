@@ -1,5 +1,5 @@
 - type: entity
-  id: Rolling_Gate
+  id: RollingGate
   parent: BaseStructure
   name: rolling gate
   description: A rolling gate, commonly used in malls and storefronts.
@@ -47,7 +47,7 @@
     openTimeOne: 1.4
     openTimeTwo: 0.3
     openingAnimationTime: 1.6
-    closingAnimationTime: 1.7    
+    closingAnimationTime: 1.7
     bumpOpen: false
     clickOpen: false
     openSound:
@@ -97,7 +97,7 @@
     graph: RollingGate
     node: final
     containers:
-    - board 
+    - board
 
 #for construction
 
